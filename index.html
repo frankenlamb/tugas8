@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project Hani</title>
+    <link href="https://fonts.cdnfonts.com/css/matrix" rel="stylesheet">
+                
+
+    <style>
+      body {
+        box-sizing: border-box;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-image: url(https://images6.alphacoders.com/121/1211942.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        
+      }
+
+      #img-wrapper img {
+        width: 200px;
+      }
+
+      nav {
+        display: flex;
+      }
+
+      nav ul {
+        display: flex;
+
+        
+      }
+
+      nav ul li {
+        list-style-type: none;
+        padding: 0.25em 0.5em;
+        
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: darkolivegreen;
+        font-family: 'Matrix', sans-serif;     
+        font-weight: bold;                                   
+        border: 3px solid #73AD21;
+        padding: 10px;
+        background-color: black;
+
+      }
+
+      #header {
+        display: flex;
+        justify-content: space-between;
+        background-color: darksalmon;
+        align-items: center;
+        padding: 0 1em;
+        box-sizing: border-box;
+        position: fixed;
+        width: 100%;
+      }
+
+      .content {
+        min-height: 100vh;
+        padding: 130px 1em 20px;
+        flex: 1;
+      }
+
+      #content-1 {
+        /* background-color: lightcoral; */
+        background-image: url("https://2020presidentsreport.arcadia.edu/wp-content/uploads/2020/04/hd-pattern-png-transparent-triangle-transparent-png-image-pattern-transparent-2048_1024.png");
+        font-size: x-large;
+        color: #fff;
+      }
+
+      #content-2 {
+        /*background-color: lightblue;*/
+        /*background-image: url(https://cdn-media-1.freecodecamp.org/images/lZYW9AXx3yncn8AKjXfSfJIfxdjmvclgvIy7);*/
+        font-size: x-large;
+        color: #fff;
+      }
+
+      #content-3 {
+        /* background-color: lightgreen; */
+        background-image: linear-gradient(130deg, lightgreen, white, lightblue);
+        font-size: x-large;
+      }
+      #content-4 {
+        background-image: url("https://2020presidentsreport.arcadia.edu/wp-content/uploads/2020/04/hd-pattern-png-transparent-triangle-transparent-png-image-pattern-transparent-2048_1024.png");
+        font-size: x-large;
+        color: #fff;
+
+      }
+      #content-5 {
+        /*background-color: lightpink;*/
+        background-image: url();
+        color: #fff;
+        font-size: x-large;
+        text-align: right;
+        
+      }
+
+      #content-6 {
+        color: #fff;
+        background-image: url("https://2020presidentsreport.arcadia.edu/wp-content/uploads/2020/04/hd-pattern-png-transparent-triangle-transparent-png-image-pattern-transparent-2048_1024.png");
+        font-size: x-large;
+      }
+
+      #content-8 {
+        /*background-color: lightgray;*/
+        background-image: url(https://cdn-media-1.freecodecamp.org/images/lZYW9AXx3yncn8AKjXfSfJIfxdjmvclgvIy7);
+        font-size: x-large;
+        text-align: center;
+        color: #fff;
+        
+      }
+
+      #welcome {
+        
+        /*display: flex;
+        align-items: center;
+        width: 150px;
+        height: 150px;*/
+        background-image: url(https://cdn-media-1.freecodecamp.org/images/lZYW9AXx3yncn8AKjXfSfJIfxdjmvclgvIy7);
+           height: 1000px;
+            width: 1300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+      }
+
+      
+
+      /*#content-6 img {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }*/
+
+    /*.column {
+        float: left;
+        width: 30%;
+        height: 50%;
+        padding: 10px;
+    }
+
+    /* Clearfix (clear floats) */
+    /*.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }*/
+
+    .row {
+    display: flex;
+    }
+
+    
+    .column {
+    flex: 33.33%;
+    height: 20%;
+    padding: 10px;
+    }
+
+    
+
+      .content-wrapper {
+        display: flex;
+      }
+
+      .content h2 {
+        margin-top: 0;
+      }
+
+      #footer {
+        margin-top: auto;
+        background-color: darksalmon;
+        color: black;
+        padding: 0.5em 1em;
+        box-sizing: border-box;
+        text-align: center;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.min.css
+"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="header">
+      <div id="img-wrapper">
+        <img
+          src="https://ik.imagekit.io/tvlk/xpe-asset/AyJ40ZAo1DOyPyKLZ9c3RGQHTP2oT4ZXW+QmPVVkFQiXFSv42UaHGzSmaSzQ8DO5QIbWPZuF+VkYVRk6gh-Vg4ECbfuQRQ4pHjWJ5Rmbtkk=/5332400363489/Hacktiv8-1a3839af-310a-4509-8a9b-bcf7bc3203e7.png?tr=q-60,c-at_max,w-720,h-1280&_src=imagekit"
+          alt="Hacktiv8 Logo"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#content-1"><i class="fa fa-cat"></i>PROFILE</a></li>
+          <li><a href="#content-2">EXPERIENCE</a></li>
+          <li><a href="#content-3">EDUCATION</a></li>
+          <li><a href="#content-4">SKILLS</a></li>
+          <li><a href="#content-5">INTEREST</a></li>
+          <li><a href="#content-6">HOBBY</a></li>
+          <li><a href="#content-8"><i class="fa fa-book"></i>CONTACT</i></a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- <section class="content-wrapper"> -->
+      <div class="content" id="welcome">
+        
+        <h1 style="color: orangered;" align="center">WELCOME!! <br> <span id="dynamic-text"></span></h1><br><br><br>
+        </div>
+        
+        
+        <!-- <div class="fa-3x"> 
+          
+          <span class="fa-stack fa-2x">
+            <i class="fas fa-camera fa-stack-1x"></i>
+            <i class="fas fa-ban fa-stack-2x" style="color:Tomato"></i>
+          </span>
+        
+        </div>-->
+
+    <!-- <section class="content-wrapper">  -->
+        <div class="content" id="content-1">
+          <h2 style="color: #fff;">PROFILE</h2>
+            <p align="justify">
+            Know how to work on a team, good leader, and hard worker that love to learn and try many kind of new things and challenges. 
+            One of the hardest challenge I have faced is learning to play A.B Mangore's "El Ultimo Tremolo" which required a lot of patience and dedication.
+
+            </p>
+            <h4 style="color: #fff;" align ="center"> <i class="fa fa-long-arrow-alt-down "></i><u>Check the music below</u></h4>
+            <center>
+                <iframe width="720p" height="400p" src="https://www.youtube.com/embed/3eIRrVhSA-I" title="Una Limosnita por el Amor de Dios (El Ultimo Tremolo) " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </center>
+
+      </div>
+      
+      <div class="content" id="content-2">
+          <h2>EXPERIENCE</h2>
+        <!-- <img 
+          src="https://img.freepik.com/free-vector/back-school-illustration-with-school-bus_1012-19.jpg?1&w=1480&t=st=1695301898~exp=1695302498~hmac=a2335f371d1221dbb7a4dfc69c56d832fabccc12af66eb24d6cf4efa06936984"
+          alt="gambar"
+        />-->
+        <ul>
+            <li style="list-style: circle;"><u>CLASSICAL GUITAR TEACHER</u></li>
+            <P align ="justify">Teach the material that has been prepared by the teachers who are not present. In the right order and specific for each students.</P>
+            <li style="list-style: circle;"><u>STAFF INTERN ADMINISTRATIVE</u>
+                <p>Staff administrative webminar.</p>
+            <ul>
+                <li style="list-style: square;">Entry the participant data. </li>
+                <li style="list-style: square;">Created and shared the workshop's online schedules and event rundowns. </li>
+                <li style="list-style: square;">Created and distributing workshop's certificates. </li>
+                <li style="list-style: square;">Coordinating with participants.</li>
+                
+            </ul></li>
+            
+        </ul>
+        
+      </div>
+    </section>
+
+    <section class="content-wrapper">
+      <div class="content" id="content-3">
+        <h2>EDUCATION</h2>
+        <ul>
+            <li style="list-style-type: square;">SDN DUREN TIGA 01 JAKARTA</li><br>
+            <li style="list-style-type: square;">SMPN 182 JAKARTA</li><br>
+            <li style="list-style-type: square;">PKBM BINA SUKMA DEPOK</li><br>
+            <li style="list-style-type: square;">UNIVERSITAS TERBUKA BOGOR</li><br>
+        </ul>
+      </div>
+      <div class="content" id="content-4">
+        <h2>SKILLS</h2>
+        <ul>
+            <li>Microsoft Office</li><br>
+            <li>Time Management</li><br>
+            <li>Trouble Solving</li><br>
+            <li>Classical Guitar</li><br>
+            <li>Japanese</li><br>
+
+        </ul>
+        
+      </div>
+    </section>
+    <!-- <section class="content-wrapper">  -->
+      <div class="content" id="content-5">
+        <h2>INTEREST</h2>
+        <p>
+          I have a huge interest in many kind of things. 
+          Movies, music, books, but one of the things I love the most is to learn and try new things I have never try before, such as :
+          <ul>
+            <li><a href="https://www.hacktiv8.com/web-developer-program" style="color: #fff;"><i class="fa fa-link"></i>Website Programing</a> </li><br>
+            <li><a href="https://www.oracle.com/id/cx/marketing/digital-marketing/" style="color: #fff;"><i class="fa fa-link"></i>Digital Marketing</a></li><br>
+            <li><a href="https://www.duolingo.com/" style="color: #fff;"><i class="fa fa-link"></i>Foreign Language</a></li><br>
+            <li><a href="https://www.classical-music.com/" style="color: #fff;"><i class="fa fa-link"></i>Classical Music</a></li><br>
+            <li><a href="https://olympics.com/en/news/squash-rules-how-to-play" style="color: #fff;"><i class="fa fa-link"></i>Squash, etc</a></li><br>
+          </ul>
+        </p>
+      </div>
+      <div class="content" id="content-6">
+        <h2>HOBBIES</h2>
+        <div class="row">
+        <div class="column">
+        <p align="center"><img src="https://online.berklee.edu/takenote/wp-content/uploads/2021/06/classical-guitar.jpg" alt="Classical Guitar" style="width: 100%;">Classical Guitar</p>
+        </div>
+        
+        <div class="column">
+        <p align="center"><img src="https://animehunch.com/wp-content/uploads/2022/02/Anime-collage-1.jpg" alt="anime" style="width: 100%;">Anime</p>
+        </div>
+
+        <div class="column">
+        <p align="center"><img src="https://images.huffingtonpost.com/2014-11-10-HPLOTR.JPG" alt="Novels" style="width: 100%;">Novel</p>
+        </div>
+        </div>
+        
+      </div>
+    </section>
+    <!-- <section class="content-wrapper">  -->
+      <!-- <div class="content" id="content-7"> 
+        <h2>Contact Me</h2>
+        <p>
+          If you are interested to collaborate with me, just fill the form below
+        </p>
+
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" /> <br />
+        <label for="email">Name: </label>
+        <input type="name" name="name" id="name" /> <br />
+        <label for="email">Message: </label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <br /><br />
+
+        <button onclick="contactMe();"><i class="fa fa-file"></i> Send</button>
+      </div>-->
+      <div class="content" id="content-8">
+        <h2>Contact Me</h2>
+        <p>
+          For Inquiry or request,<br> Just send the message below.
+        </p>
+
+        
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" /> <br /><br>
+        <label for="email">Name: </label>
+        <input type="name" name="name" id="name" /> <br /><br>
+        <label for="email" >Message: <br></label>
+        <textarea name="message" id="message" cols="50" rows="10"></textarea>
+        <br /><br />
+
+        <button onclick="contactMe();"> <i class="fa fa-file"></i> Send</button>
+      </div>
+    </section>
+
+    <section id="footer">
+      <p><strong>&copy; 2023. HANI N NADHILAH. All Rights Reserved</strong></p>
+      
+    </section>
+
+    <script src="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.all.min.js
+    "></script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+      let typed = new Typed("#dynamic-text", {
+        strings: ["To my first ever website..", "This is my final project for Hacktiv8", "Go ahead and scroll away..", "ENJOYY!!!" ],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+      });
+
+      contactMe = () => {
+        Swal.fire({
+          icon: "success",
+          title: "Great ",
+          text: "Thank You for your message!.",
+        });
+
+        
+      };
+    </script>
+  </body>
+</html>
